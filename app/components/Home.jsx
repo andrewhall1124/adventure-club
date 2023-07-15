@@ -3,6 +3,7 @@ import modbag from '../assets/modbag.png';
 import ropes from '../assets/ropes.png';
 import club from '../assets/club.png';
 
+import { MyButton } from './MyButton';
 export function Home() {
 
   const scrollDown = () =>{
@@ -11,6 +12,14 @@ export function Home() {
       block: 'end',
       behavior: 'smooth' 
     });
+  }
+
+  const navigateToProduct = () =>{
+    location.href = '/products/modular-bag'
+  }
+
+  const navigateToSignUp = () => {
+    location.href = 'account/register'
   }
 
   return(
@@ -29,9 +38,11 @@ export function Home() {
           </div>
           <div className="flex justify-center">
             <div className="">
-              {/* <Button variant="outlined" color="error" onClick={scrollDown}> */}
-                Shop Gear
-              {/* </Button> */}
+              <MyButton
+                name="Shop Gear"
+                style="outlined"
+                action={scrollDown}
+              />
             </div>
           </div>  
         </div>
@@ -44,13 +55,11 @@ export function Home() {
               The Modular Bag
           </div>
           <div className="text-2xl item pb-6">Carry all of your essentials the way you want to</div>
-          <div>
-            {/* <Button variant="contained" color="error"
-              component={Link}
-              to="/products/modular-bag"
-            >
-              Shop
-            </Button> */}
+          <div className='flex justify-center'>
+            <MyButton
+                name="Shop"
+                action={navigateToProduct}
+              />
           </div>
         </div>
         <img src={modbag} alt="bag" className="main-image"></img>
@@ -79,7 +88,10 @@ export function Home() {
           </div>
           <div class="flex justify-center items-center gap-4">
             {/* <TextField label="Email" variant="outlined" color="error"></TextField> */}
-            {/* <Button variant="contained" color="error">Sign Up</Button> */}
+            <MyButton
+              name="Sign up"
+              action={navigateToSignUp}
+            />          
           </div>
         </div>
         <img src={club} alt="club" className="main-image h-[50vh]"></img>
