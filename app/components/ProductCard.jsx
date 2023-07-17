@@ -49,9 +49,9 @@ export function ProductCard({
       <div className='flex flex-col'>
         {image && (
           <Image
-            className="object-cover flex-1 my-shadow bg-stone-200"
+            className="object-cover flex-1 my-shadow bg-gray-100"
             // sizes="(min-width: 64em) 25vw, (min-width: 48em) 30vw, 45vw"
-            aspectRatio="4/5"
+            aspectRatio="3/4"
             data={image}
             alt={image.altText || `Picture of ${product.title}`}
             loading={loading}

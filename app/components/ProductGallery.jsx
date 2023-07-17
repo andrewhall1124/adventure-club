@@ -35,7 +35,7 @@ export function ProductGallery({media, className}) {
                     //     ? '(min-width: 48em) 60vw, 90vw'
                     //     : '(min-width: 48em) 30vw, 90vw'
                     // }
-                    className="h-full w-full object-cover my-shadow bg-stone-200"
+                    className="h-full p-4 w-full object-cover my-shadow bg-gray-100"
                   />
               )}
             </div>
