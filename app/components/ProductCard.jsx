@@ -49,7 +49,7 @@ export function ProductCard({
       <div className='flex flex-col'>
         {image && (
           <Image
-            className="object-cover flex-1 my-shadow"
+            className="object-cover flex-1 my-shadow bg-stone-200"
             // sizes="(min-width: 64em) 25vw, (min-width: 48em) 30vw, 45vw"
             aspectRatio="4/5"
             data={image}

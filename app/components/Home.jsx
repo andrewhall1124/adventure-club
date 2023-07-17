@@ -1,5 +1,5 @@
 import alaska from '../assets/alaska.png';
-import modbag from '../assets/modbag.png';
+import slabbag from '../assets/slabbag-photo.png';
 import ropes from '../assets/ropes.png';
 import club from '../assets/club.png';
 
@@ -15,7 +15,7 @@ export function Home() {
   }
 
   const navigateToProduct = () =>{
-    location.href = '/products/modular-bag'
+    location.href = '/products/slab-1l-cross-body-bag'
   }
 
   const navigateToSignUp = () => {
@@ -51,8 +51,8 @@ export function Home() {
 
       <div className='my-section pb-0'>
         <div className="item-container">
-          <div className="font-one text-4xl pb-6">
-              The Modular Bag
+          <div className="font-one text-4xl">
+              The Slab 1L
           </div>
           <div className="text-2xl item pb-6">Carry all of your essentials the way you want to</div>
           <div className='flex justify-center'>
@@ -62,7 +62,7 @@ export function Home() {
               />
           </div>
         </div>
-        <img src={modbag} alt="bag" className="main-image"></img>
+        <img src={slabbag} alt="bag" className="main-image"></img>
       </div>
       {/* This div is to help with scroll behavior */}
       <div className="h-12" id='target'></div> 

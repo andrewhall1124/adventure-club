@@ -29,13 +29,13 @@ export function ProductGallery({media, className}) {
                   <Image
                     loading={i === 0 ? 'eager' : 'lazy'}
                     data={image}
-                    // aspectRatio={!isFirst && !isFourth ? '4/5' : undefined}
+                    aspectRatio={'3/4'}
                     // sizes={
                     //   isFirst || isFourth
                     //     ? '(min-width: 48em) 60vw, 90vw'
                     //     : '(min-width: 48em) 30vw, 90vw'
                     // }
-                    className="h-full w-full object-cover my-shadow"
+                    className="h-full w-full object-cover my-shadow bg-stone-200"
                   />
               )}
             </div>
