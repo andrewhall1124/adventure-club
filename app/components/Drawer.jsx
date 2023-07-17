@@ -50,7 +50,7 @@ export function Drawer({heading, open, onClose, openFrom = 'right', children}) {
               >
                 <Dialog.Panel className="w-screen max-w-lg text-left align-middle transition-all transform shadow-xl h-screen-dynamic bg-contrast">
                   <header
-                    className={`sticky top-0 flex items-center px-6 h-nav sm:px-8 md:px-12 ${
+                    className={`bg-black text-white sticky top-0 flex items-center px-6 h-nav sm:px-8 md:px-12 ${
                       heading ? 'justify-between' : 'justify-end'
                     }`}
                   >
@@ -63,7 +63,7 @@ export function Drawer({heading, open, onClose, openFrom = 'right', children}) {
                     )}
                     <button
                       type="button"
-                      className="p-4 -m-4 transition text-primary hover:text-primary/50"
+                      className=" p-4 -m-4 transition"
                       onClick={onClose}
                       data-test="close-cart"
                     >
