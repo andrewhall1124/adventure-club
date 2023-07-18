@@ -37,7 +37,7 @@ export function Layout({children, layout}) {
             Skip to content
           </a>
         </div>
-        {/* {headerMenu && <Header title={layout.shop.name} menu={headerMenu} />} */}
+        {headerMenu && <Header title={layout.shop.name} menu={headerMenu} />}
         <main role="main" id="mainContent" className="flex-grow">
           {children}
         </main>
@@ -153,26 +153,26 @@ function MobileHeader({title, isHome, openCart, openMenu}) {
   return (
     <header
       role="banner"
-      className="bg-white text-black flex lg:hidden items-center h-[80px] sticky z-40 top-0 justify-between w-full leading-none gap-4 px-4 md:px-8"
+      className="bg-black text-white flex lg:hidden items-center h-[40px] sticky z-40 top-0 justify-between w-full leading-none gap-4 px-4 md:px-8"
     >
       <div className="flex items-center justify-start w-full gap-4">
-        <button
+        {/* <button
           onClick={openMenu}
           className="relative flex items-center justify-center w-8 h-8"
         >
           <IconMenu />
-        </button>
+        </button> */}
       </div>
-
+{/* 
       <Link
         className="flex items-center justify-center flex-grow w-full h-full"
         to="/"
       >
           <img src={logo} alt="logo" className="h-full p-2"></img>
-      </Link>
+      </Link> */}
 
       <div className="flex items-center justify-end w-full gap-4">
-        <AccountLink className="relative flex items-center justify-center w-8 h-8" />
+        {/* <AccountLink className="relative flex items-center justify-center w-8 h-8" /> */}
         <CartCount isHome={isHome} openCart={openCart} />
       </div>
     </header>
@@ -186,13 +186,13 @@ function DesktopHeader({isHome, menu, openCart, title}) {
     <header
       role="banner"
       className={
-        "text-black bg-white hidden lg:flex sticky z-40 top-0 h-[80px] items-center justify-between w-full px-12"
+        "text-white bg-black hidden lg:flex sticky z-40 top-0 h-[40px] items-center justify-between w-full px-12"
       }
     >
       <div className="flex gap-12 w-[33%]">
         <nav className="flex gap-8">
           {/* Top level menu items */}
-          {(menu?.items || []).map((item) => (
+          {/* {(menu?.items || []).map((item) => (
             <Link
               key={item.id}
               to={item.to}
@@ -204,18 +204,18 @@ function DesktopHeader({isHome, menu, openCart, title}) {
             >
               {item.title}
             </Link>
-          ))}
+          ))} */}
         </nav>
       </div>
 
-      <Link 
+      {/* <Link 
         className="flex items-center justify-center flex-grow w-full h-full"
         to="/" prefetch="intent">
           <img src={logo} alt="logo" className='h-full p-2'></img>
-      </Link>
+      </Link> */}
 
       <div className="flex items-center justify-end gap-1 w-[33%]">
-        <AccountLink className="relative flex items-center justify-center w-8 h-8 focus:ring-primary/5" />
+        {/* <AccountLink className="relative flex items-center justify-center w-8 h-8 focus:ring-primary/5" /> */}
         <CartCount isHome={isHome} openCart={openCart} />
       </div>
     </header>
