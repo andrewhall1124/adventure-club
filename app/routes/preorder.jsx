@@ -100,8 +100,8 @@ export default function PreorderPage() {
   return (
     <>
       <div className='mx-6 my-6 pt-2 my-shadow'>
-        <div className='h-[10vh] flex items-end'>
-        <img src={logo} className='h-full py-2 ml-4'></img>
+        <div className='flex items-end'>
+        <img src={logo} className='h-[60px] py-2 ml-4'></img>
           <div className='font-one px-2 py-1 text-2xl font-bold'>
             Adventure Club
           </div>
