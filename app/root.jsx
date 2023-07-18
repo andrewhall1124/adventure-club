@@ -51,14 +51,14 @@ export const links = () => {
   ];
 };
 
-export async function loader({request, context}) {
+export async function loader({ request, context }) {
   const cartId = getCartId(request);
   const [customerAccessToken, layout] = await Promise.all([
     context.session.get('customerAccessToken'),
     getLayoutData(context),
   ]);
 
-  const seo = seoPayload.root({shop: layout.shop, url: request.url});
+  const seo = seoPayload.root({ shop: layout.shop, url: request.url });
 
   return defer({
     isLoggedIn: Boolean(customerAccessToken),
@@ -91,8 +91,8 @@ export default function App() {
       </head>
       <body>
         <Layout
-          key={`${locale.language}-${locale.country}`}
-          layout={data.layout}
+        key={`${locale.language}-${locale.country}`}
+        layout={data.layout}
         >
           <Outlet />
         </Layout>

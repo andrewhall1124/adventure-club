@@ -28,6 +28,7 @@ import {useCartFetchers} from '~/hooks/useCartFetchers';
 
 export function Layout({children, layout}) {
   const {headerMenu, footerMenu} = layout;
+
   return (
     <>
       <div className="flex flex-col min-h-screen">
@@ -36,7 +37,7 @@ export function Layout({children, layout}) {
             Skip to content
           </a>
         </div>
-        {headerMenu && <Header title={layout.shop.name} menu={headerMenu} />}
+        {/* {headerMenu && <Header title={layout.shop.name} menu={headerMenu} />} */}
         <main role="main" id="mainContent" className="flex-grow">
           {children}
         </main>
@@ -167,7 +168,7 @@ function MobileHeader({title, isHome, openCart, openMenu}) {
         className="flex items-center justify-center flex-grow w-full h-full"
         to="/"
       >
-          <img src={logo} alt="logo" class="h-full p-2"></img>
+          <img src={logo} alt="logo" className="h-full p-2"></img>
       </Link>
 
       <div className="flex items-center justify-end w-full gap-4">
