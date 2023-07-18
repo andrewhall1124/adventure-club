@@ -108,7 +108,7 @@ export default function PreorderPage() {
         </div>
         <div className='border-black border mx-4'></div>
         <div className='p-4 font-two'>
-          Preorder the Slab 1L Hiking Bag now and enjoy free shipping by using the code <span className='font-bold'>EARLYADOPTER</span> at checkout. Get ready to elevate your outdoor adventures with this durable and compact bag.
+          Preorder the Slab 1L Hiking Bag now and enjoy free shipping by using the code <span className='font-bold'>EARLYADOPTER</span> at checkout. Bags are estimated to ship on August 9th. Get ready to elevate your outdoor adventures with this durable and compact bag.
         </div>          
       </div>
       <div className='flex flex-col lg:flex-row h-full w-full'>
