@@ -98,7 +98,7 @@ export default function PreorderPage() {
   const {shippingPolicy, refundPolicy} = shop;
 
   return (
-    <>
+    <div className='text-black'>
       <div className='mx-6 my-6 pt-2 my-shadow'>
         <div className='flex items-end'>
         <img src={logo} className='h-[60px] py-2 ml-4'></img>
@@ -145,7 +145,7 @@ export default function PreorderPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
