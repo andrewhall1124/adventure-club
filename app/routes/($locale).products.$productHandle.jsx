@@ -112,7 +112,6 @@ export default function Product() {
               <ProductDetail
                 title="Product Details"
                 content={descriptionHtml}
-                className="bg-gray-400"
               />
             )}
             {shippingPolicy?.body && (
